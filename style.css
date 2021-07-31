@@ -143,13 +143,11 @@ nav img:hover{
 }
 
 .aboutcol{
-
-	width: 100px;
-	flex-basis: 20%;
-	background: #E9967A;
+	flex-basis: 32%;
+	background: #CD853F;
 	border-radius: 10px;
-	margin-bottom: 5%;
-	padding: 20px 12px;
+	margin-bottom: 25%;
+	padding: 10px 10px;
 	box-sizing: border-box;
 	transition: 0.25s;
 }
@@ -196,10 +194,10 @@ nav img:hover{
 }
 
 .linkscol{
-	width: 100px;
-	flex-basis: 20%;
+	flex-basis: 32%;
 	border-radius: 10px;
-	margin-bottom: 5%;
+	margin-bottom: 25%;
+	position: relative;
 	overflow: hidden;
 }
 
