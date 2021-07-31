@@ -196,10 +196,10 @@ nav img:hover{
 }
 
 .linkscol{
-	flex-basis: 32%;
+	width: 100px;
+	flex-basis: 20%;
 	border-radius: 10px;
-	margin-bottom: 50%;
-	position: relative;
+	margin-bottom: 5%;
 	overflow: hidden;
 }
 
