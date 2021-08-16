@@ -27,6 +27,8 @@ body{
 	background: none;
 	margin: 50px 0px;
 	line-height: 1.2;
+	border: 1px solid var(--orange);
+	border-radius: 5px;
 
 }
 
@@ -73,8 +75,6 @@ color: var(--orange);
 .bx_main{  /*-- this is the container --*/
 	display: grid;
 	grid-gap: 6px;
-
-
 }
 
 .grid{  /*-- sub-container for all resource sections --*/
@@ -86,7 +86,6 @@ color: var(--orange);
 	align-items:stretch;
 	width: 100%;
 	height: 90vh;
-
 }
 
 .txt{
@@ -111,18 +110,33 @@ color: var(--orange);
 }
 
 .pdf{
-	display: flex;
-	justify-content: center;
+	position: relative;
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
+	background-image: url(img/img_ex.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
+
+}
+
+.pdf a{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: var(--primary);
+	text-decoration: none;
 }
 
 .document{
-
 }
 
+.pdf_viewer{
+	width: 100%;
+	height: 90vh;	
+}
 
 
 
@@ -132,18 +146,14 @@ color: var(--orange);
 	background-image: url(img/co_icon.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-size: 50%;
-	background-position: top center;
-	grid-column:1;
+	max-height: 50%;
+	background-position: center;
 	opacity: 0.80;
-	padding: 2rem;
 }
 
 .co_symb h1{
 	color: var(--primary);
-	position: relative;
-		top: 75%;
-		left: 50%;	
+	transform: translate(40%,800%);
 }
 
 .co_path{
@@ -194,7 +204,7 @@ color: var(--orange);
 .about img{
 	width: 60%;
 	margin:auto;
-	display: block;  
+	display: block; 
 	border: 2px solid black;
 	box-shadow: var(--shadow);
 }
@@ -241,6 +251,8 @@ footer{
 
 @media (max-width: 700px) {
 
+
+
 .txt h1{
 	text-align:left;
 	font-size: 32px;
@@ -268,7 +280,18 @@ footer{
 }
 
 
+
 @media (max-width: 500px) {
+
+.co_symb{
+	margin: 2rem;
+}
+
+.co_symb h1{
+	color: var(--primary);
+	font-size: 12px;
+	transform: translate(0%,800%);
+}
 
 .grid{
 	display:grid;
