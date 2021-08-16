@@ -244,8 +244,7 @@ footer{
 .txt h1{
 	text-align:left;
 	font-size: 32px;
-	padding: 2rem;
-	
+	padding: 2rem;	
 }
 
 .txt p{
@@ -266,7 +265,7 @@ footer{
 	height:25vh;
 }
 
-
+}
 
 
 @media (max-width: 500px) {
