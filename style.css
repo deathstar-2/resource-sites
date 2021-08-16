@@ -113,7 +113,7 @@ color: var(--orange);
 	position: relative;
 	margin: 1rem;
 	/*--background: rgba(167,175,190,0.1);--*/
-	background-image: url(img/img_ex.png);
+	background-image: url(img/img_ex.PNG);
 	background-repeat: no-repeat;
 	background-size: contain;
 	max-height: 50%;
