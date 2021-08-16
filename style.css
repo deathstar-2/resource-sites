@@ -112,7 +112,7 @@ color: var(--orange);
 .pdf{
 	position: relative;
 	margin: 1rem;
-	background: rgba(167,175,190,0.1);
+	/*--background: rgba(167,175,190,0.1);--*/
 	background-image: url(img/img_ex.png);
 	background-repeat: no-repeat;
 	background-size: contain;
