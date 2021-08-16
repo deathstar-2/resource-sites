@@ -112,11 +112,10 @@ color: var(--orange);
 .pdf{
 	position: relative;
 	margin: 1rem;
-	/*--background: rgba(167,175,190,0.1);--*/
+	background: rgba(167,175,190,0.1);
 	background-image: url(img/img_ex.PNG);
 	background-repeat: no-repeat;
-	background-size: contain;
-	max-height: 50%;
+	background-size: 50%;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
