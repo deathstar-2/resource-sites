@@ -19,7 +19,7 @@
 html{
 	box-sizing: border-box;
 	font-family: arial, helvetica, sans-serif;
-	background-image: linear-gradient(rgba(4,9,25,0.8),rgba(4,9,25,0.8)),url(img/main_bck_2.png);
+	background-image: linear-gradient(rgba(4,9,25,0.7),rgba(4,9,25,0.7)),url(img/main_bck_2.png);
 	background-repeat: repeats;
 }
 
@@ -156,7 +156,7 @@ color: var(--orange);
 }
 
 .co_path{
-	background-image: url(img/co_trng_path_3.png);
+	background-image: url(img/co_trng_path_3.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
@@ -311,7 +311,7 @@ footer{
 }
 
 .co_path{
-	background-image: url(img/co_trng_path_4.png);
+	background-image: url(img/co_trng_path_4.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
