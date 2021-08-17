@@ -119,7 +119,7 @@ color: var(--orange);
 /*--position: relative;
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
-	background-image: url(img/img_ex.png);
+	background-image: url(img/img_ex.PNG);
 	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -173,7 +173,7 @@ color: var(--orange);
 }
 
 .co_path{
-	background-image: url(img/co_trng_path_3.png);
+	background-image: url(img/co_trng_path_3.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
@@ -293,7 +293,7 @@ footer{
 }
 
 .co_path{
-	background-image: url(img/co_trng_path_4.png);
+	background-image: url(img/co_trng_path_4.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
@@ -338,7 +338,7 @@ footer{
 }
 
 .co_path{
-	background-image: url(img/co_trng_path_4.png);
+	background-image: url(img/co_trng_path_4.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
