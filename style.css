@@ -1,15 +1,12 @@
 /*-- VCG 2021 MILITARY CAPACITY BUILDER DOCUMENT 20210801AGH --*/
 
-
-
 /*-- variables --*/
 :root {
 	--primary: #66cdaa;
 	--dark: #333;
 	--light: #fff;
 	--orange: #8c6a0d;
-	--shadow: 0 1px 5px rgba(104,104,104,0.8);
-	
+	--shadow: 0 1px 5px rgba(104,104,104,0.8);	
 }
 
 
@@ -74,19 +71,27 @@ color: var(--orange);
 .bx_main{  /*-- this is the container --*/
 	display: grid;
 	grid-gap: 6px;
-
 }
 
-.grid{  /*-- sub-container for all resource sections --*/
+.grid{  /*-- sub-container for sections --*/
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
 	grid-auto-rows:1fr;
 	grid-gap: 2px;
-	justify-items:stretch;
-	align-items:stretch;
 	padding: 2px;
-	width: 98%;
-	height: 90%;
+}
+
+.grid a{
+	text-decoration: none;
+	color: var(--orange);
+	font-weight: 600;
+	transition: 0.50s;
+}
+
+.grid a:hover{
+	border: 1px solid var(--orange);
+	background: rgba(102, 205, 170, 0.20);
+	color: var(--orange);
 }
 
 .txt{
@@ -111,6 +116,17 @@ color: var(--orange);
 	padding: 1rem;
 }
 
+.txt ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 2px 20px;
+}
+
+.txt ul li a{
+	color: var(--primary);
+	text-decoration: none;
+}
+
 .pdf{
 	position: relative;
 	margin: 1rem;
@@ -120,16 +136,16 @@ color: var(--orange);
 	padding: 6px;
 }
 
-.pdf a{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: var(--primary);
-	text-decoration: none;
-}
+
 
 
 /*-- home screen --*/
+.home {
+	width: auto;
+	height: auto;
+}
+
+
 .co_symb{
 	background-image: url(img/co_icon.png);
 	background-repeat: no-repeat;
@@ -141,17 +157,18 @@ color: var(--orange);
 
 .co_symb h1{
 	color: var(--primary);
-	transform: translate(40%,800%);
+	transform: translate(10px,-60px);
 }
 
 .co_path{
 	background-image: url(img/co_trng_path_3.PNG);
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 100%;
+	background-size: contain;
 	background-position: center;
-	grid-column:1/3;
+	grid-column: 1/3;
 	opacity: 0.80;
-	padding: 2rem;
+	padding: 2px;
 	transition: 0.50s;
 }
 
@@ -175,13 +192,14 @@ color: var(--orange);
 	padding: 1rem;
 	font-size: 14px;
 	font-weight: 600;
-	transition: 0.50s;
+	transition: 0.25s;
 }
 
 .grid2 a:hover{
 	border: 1px solid var(--orange);
-	background: rgba(102, 205, 170, 0.10);
-	color: var(--orange);
+	background: rgba(102, 205, 170, 0.50);
+	color: var(--dark);
+	font-weight: 1000;
 }
 
 
@@ -194,20 +212,11 @@ color: var(--orange);
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	background-image: url(img/atg_img.PNG);
-	background-size: 80%;
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 6px;
-}
-
-.atg_pdf a{
-	color: var(--primary);
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 }
 
 
@@ -220,20 +229,11 @@ color: var(--orange);
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	background-image: url(img/cal_img.PNG);
-	background-size: 90%;
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 6px;
-}
-
-.cal_pdf a{
-	color: var(--primary);
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 }
 
 
@@ -246,20 +246,11 @@ color: var(--orange);
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	background-image: url(img/trngmtg_img.PNG);
-	background-size: 90%;
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 6px;
-}
-
-.trngmtg_pdf a{
-	color: var(--primary);
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 }
 
 
@@ -272,20 +263,11 @@ color: var(--orange);
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	background-image: url(img/trngevt_img.PNG);
-	background-size: 90%;
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 6px;
-}
-
-.trngevt_pdf a{
-	color: var(--primary);
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 }
 
 
@@ -298,20 +280,11 @@ color: var(--orange);
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	background-image: url(img/resmtg_img.PNG);
-	background-size: 90%;
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 6px;
-}
-
-.resmtg_pdf a{
-	color: var(--primary);
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 }
 
 
@@ -324,21 +297,14 @@ color: var(--orange);
 	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	background-image: url(img/lpd_img.PNG);
-	background-size: 90%;
 	background-repeat: no-repeat;
+	background-size: contain;
 	background-position: center;
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 6px;
 }
 
-.lpd_pdf a{
-	color: var(--primary);
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
+
 
 
 /*-- about --*/
@@ -395,12 +361,11 @@ footer{
 	background-image: url(img/co_trng_path_4.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
+	background-size: contain;
 	background-position: center;
-	grid-column:1/3;
+	grid-column: 1/3;
 	opacity: 0.80;
-	padding: 12rem;
-}
-
+	padding: 2px;
 }
 
 
@@ -415,7 +380,7 @@ footer{
 .co_symb h1{
 	color: var(--primary);
 	font-size: 12px;
-	transform: translate(0%,800%);
+	transform: translate(10%,250%);
 }
 
 .grid{
@@ -440,11 +405,13 @@ footer{
 	background-image: url(img/co_trng_path_4.PNG);
 	background-repeat: no-repeat;
 	background-size: 90%;
+	background-size: contain;
 	background-position: center;
-	grid-column:1/3;
+	grid-column: 1/3;
 	opacity: 0.80;
-	padding: 12rem;
+	padding: 2px;
 }
+
 
 .co_symb h1{
 	color: var(--primary);
