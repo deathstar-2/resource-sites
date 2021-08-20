@@ -14,7 +14,6 @@
 
 /*-- fundamentals --*/
 html{
-	box-sizing: border-box;
 	font-family: arial, helvetica, sans-serif;
 	background-image: linear-gradient(rgba(4,9,25,0.95),rgba(4,9,25,0.95)),url(img/main_bck_2.png);
 	background-repeat: repeats;
@@ -22,9 +21,9 @@ html{
 
 body{
 	background: none;
-	margin: 50px 0px;
+	margin: 0.5rem 0.5rem;
 	line-height: 1.2;
-	border: 1px solid var(--orange);
+	border: 2px solid var(--orange);
 	border-radius: 5px;
 }
 
@@ -43,7 +42,7 @@ hr{
 .nav ul li{
 	list-style: none;
 	display: inline-block;
-	padding: 2px 20px;
+	padding:  0em 1rem;
 }
 
 .nav ul li a{
@@ -73,12 +72,12 @@ color: var(--orange);
 	grid-gap: 6px;
 }
 
-.grid{  /*-- sub-container for sections --*/
+.grid {  /*-- sub-container for sections --*/
 	display:grid;
-	grid-template-columns:repeat(2,1fr);
-	grid-auto-rows:1fr;
-	grid-gap: 2px;
-	padding: 2px;
+	min-height: 500px;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 1rem;
+	padding: 6px;
 }
 
 .grid a{
@@ -95,25 +94,23 @@ color: var(--orange);
 }
 
 .txt{
-	margin:1rem;
 	color: var(--primary);
 	text-decoration: none;	
 	background: rgba(167,175,190,0.1);
 	border: 2px solid var(--orange);
 	border-radius: 5px;
-	padding: 2px;
 }
 
 .txt h1{
-	text-align:left;
+	text-align:center;
 	font-size: 48px;
-	padding: 1rem;
+	padding: 0em 1em;
 }
 
 .txt p{
 	text-align:left;
 	font-size: 16px;
-	padding: 1rem;
+	padding: 0em 1em;
 }
 
 .txt ul li{
@@ -129,7 +126,6 @@ color: var(--orange);
 
 .pdf{
 	position: relative;
-	margin: 1rem;
 	background: rgba(167,175,190,0.1);
 	border: 2px solid var(--orange);
 	border-radius: 5px;
@@ -144,7 +140,6 @@ color: var(--orange);
 	width: auto;
 	height: auto;
 }
-
 
 .co_symb{
 	background-image: url(img/co_icon.png);
@@ -161,26 +156,17 @@ color: var(--orange);
 }
 
 .co_path{
-	background-image: url(img/co_trng_path_3.PNG);
-	background-repeat: no-repeat;
-	background-size: 100%;
+	min-height: 200px;
+	background: url(img/co_path_lg.PNG) no-repeat center;
 	background-size: contain;
-	background-position: center;
-	grid-column: 1/3;
-	opacity: 0.80;
-	padding: 2px;
-	transition: 0.50s;
+	grid-column:1/3;
+	opacity: 0.75;
 }
-
-.co_path:hover{opacity: 0.92;}
 
 .grid2{
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
-	grid-template-rows:repeat(3,1fr);
 	grid-gap: 12px;
-	padding: 12px 12px;
-	margin: 12px 12px;
 }
 
 .grid2 a{
@@ -191,15 +177,14 @@ color: var(--orange);
 	border-radius: 5px;
 	padding: 1rem;
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 500;
 	transition: 0.25s;
 }
 
 .grid2 a:hover{
-	border: 1px solid var(--orange);
+	border: 1px solid black;
 	background: rgba(102, 205, 170, 0.50);
-	color: var(--dark);
-	font-weight: 1000;
+	color: black;
 }
 
 
@@ -208,14 +193,10 @@ color: var(--orange);
 /*-- annual training guidance --*/
 
 .atg_pdf{
-	position: relative;
-	margin: 1rem;
-	background: rgba(167,175,190,0.1);
-	background-image: url(img/atg_img.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background: rgba(167,175,190,0.1) url(img/atg_img.PNG) no-repeat center;
+	background-size: 60%;
 	border: 2px solid var(--orange);
+	min-height: 200px;
 	border-radius: 5px;
 }
 
@@ -223,16 +204,11 @@ color: var(--orange);
 
 
 /*-- calendar and battle rhythm --*/
-
 .cal_pdf{
-	position: relative;
-	margin: 1rem;
-	background: rgba(167,175,190,0.1);
-	background-image: url(img/cal_img.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background: rgba(167,175,190,0.1) url(img/cal_img.PNG) no-repeat center;
+	background-size: 60%;
 	border: 2px solid var(--orange);
+	min-height: 200px;
 	border-radius: 5px;
 }
 
@@ -242,14 +218,10 @@ color: var(--orange);
 /*-- training meetings --*/
 
 .trngmtg_pdf{
-	position: relative;
-	margin: 1rem;
-	background: rgba(167,175,190,0.1);
-	background-image: url(img/trngmtg_img.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background: rgba(167,175,190,0.1) url(img/trngmtg_img.PNG) no-repeat center;
+	background-size: 60%;
 	border: 2px solid var(--orange);
+	min-height: 200px;
 	border-radius: 5px;
 }
 
@@ -259,14 +231,10 @@ color: var(--orange);
 /*-- training events --*/
 
 .trngevt_pdf{
-	position: relative;
-	margin: 1rem;
-	background: rgba(167,175,190,0.1);
-	background-image: url(img/trngevt_img.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background: rgba(167,175,190,0.1) url(img/trngevt_img.PNG) no-repeat center;
+	background-size: 60%;
 	border: 2px solid var(--orange);
+	min-height: 200px;
 	border-radius: 5px;
 }
 
@@ -276,14 +244,10 @@ color: var(--orange);
 /*-- unit resilience --*/
 
 .resmtg_pdf{
-	position: relative;
-	margin: 1rem;
-	background: rgba(167,175,190,0.1);
-	background-image: url(img/resmtg_img.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background: rgba(167,175,190,0.1) url(img/resmtg_img.PNG) no-repeat center;
+	background-size: 60%;
 	border: 2px solid var(--orange);
+	min-height: 200px;
 	border-radius: 5px;
 }
 
@@ -293,14 +257,10 @@ color: var(--orange);
 /*-- professional development --*/
 
 .lpd_pdf{
-	position: relative;
-	margin: 1rem;
-	background: rgba(167,175,190,0.1);
-	background-image: url(img/lpd_img.PNG);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background: rgba(167,175,190,0.1) url(img/lpd_img.PNG) no-repeat center;
+	background-size: 60%;
 	border: 2px solid var(--orange);
+	min-height: 200px;
 	border-radius: 5px;
 }
 
@@ -333,39 +293,46 @@ footer{
 
 @media (max-width: 700px) {
 
+.nav ul li{
+	list-style: none;
+	display: block;
+	padding:  0em 1rem;
+}
+
+.nav ul li::after{
+	display: none;
+}
+
 .txt h1{
-	text-align:left;
-	font-size: 32px;
-	padding: 2rem;	
+	font-size: 32px;	
 }
 
 .txt p{
-	text-align:left;
 	font-size: 14px;
-	padding: 2rem;
+}
+
+.grid2{
+	grid-gap: 20px;
 }
 
 .grid2 a{
 	color: var(--primary);
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: 600;	
+}
+
+.co_path{
+	background: url(img/co_path_sm.PNG) no-repeat center;
+	background-size: contain;
+	grid-column:1/3;
+	opacity: 0.75;
 }
 
 .document{
 	width:100%;
 	height:25vh;
 }
-
-.co_path{
-	background-image: url(img/co_trng_path_4.PNG);
-	background-repeat: no-repeat;
-	background-size: 90%;
-	background-size: contain;
-	background-position: center;
-	grid-column: 1/3;
-	opacity: 0.80;
-	padding: 2px;
 }
 
 
@@ -383,35 +350,13 @@ footer{
 	transform: translate(10%,250%);
 }
 
-.grid{
-	display:grid;
-	grid-template-columns:1fr;
-	grid-auto-rows:1fr;
+.grid {  
+	grid-template-columns: 1fr;
+}
+
+.grid2{
 	grid-gap: 12px;
-	justify-items:stretch;
-	align-items:stretch;
-	width: 98vw;
-	height: 100vh;
 }
-
-.grid2 a{
-	color: var(--primary);
-	text-decoration: none;
-	font-size: 10px;
-	font-weight: 600;	
-}
-
-.co_path{
-	background-image: url(img/co_trng_path_4.PNG);
-	background-repeat: no-repeat;
-	background-size: 90%;
-	background-size: contain;
-	background-position: center;
-	grid-column: 1/3;
-	opacity: 0.80;
-	padding: 2px;
-}
-
 
 .co_symb h1{
 	color: var(--primary);
@@ -423,18 +368,10 @@ footer{
 .txt h1{
 	text-align:left;
 	font-size: 12px;
-	padding: 2rem;
 }
 
 .txt p{
 	text-align:left;
 	font-size: 10px;
-	padding: 2rem;
 }
-
-.document{
-	width:100%;
-	height:25vh;
-}
-
 }
