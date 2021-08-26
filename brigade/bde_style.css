@@ -197,10 +197,12 @@ color: var(--orange);
 }
 
 
+
+
 /*-- commander's guidance--*/
 
 .atg_pdf{
-	background: rgba(167,175,190,0.1) url(img/bn_atg_img.png) no-repeat center;
+	background: rgba(167,175,190,0.1) url(img/bde_atg_img.png) no-repeat center;
 	background-size: 60%;
 	border: 2px solid var(--orange);
 	min-height: 200px;
@@ -212,7 +214,7 @@ color: var(--orange);
 
 /*-- organizational structure --*/
 .cal_pdf{
-	background: rgba(167,175,190,0.1) url(img/bn_org_img.png) no-repeat center;
+	background: rgba(167,175,190,0.1) url(img/bde_org_img.png) no-repeat center;
 	background-size: 60%;
 	border: 2px solid var(--orange);
 	min-height: 200px;
@@ -225,7 +227,7 @@ color: var(--orange);
 /*-- calendar & battle rhythm --*/
 
 .trngmtg_pdf{
-	background: rgba(167,175,190,0.1) url(img/bn_cal_img.png) no-repeat center;
+	background: rgba(167,175,190,0.1) url(img/bde_cal_img.png) no-repeat center;
 	background-size: 60%;
 	border: 2px solid var(--orange);
 	min-height: 200px;
@@ -235,10 +237,10 @@ color: var(--orange);
 
 
 
-/*-- staff operations --*/
+/*-- bde staff & operations --*/
 
 .trngevt_pdf{
-	background: rgba(167,175,190,0.1) url(img/bn_ops_img.png) no-repeat center;
+	background: rgba(167,175,190,0.1) url(img/bde_ops_img.png) no-repeat center;
 	background-size: 60%;
 	border: 2px solid var(--orange);
 	min-height: 200px;
@@ -248,10 +250,10 @@ color: var(--orange);
 
 
 
-/*-- resilience --*/
+/*-- professional development --*/
 
 .resmtg_pdf{
-	background: rgba(167,175,190,0.1) url(img/bn_res_img.png) no-repeat center;
+	background: rgba(167,175,190,0.1) url(img/bde_dev_img.png) no-repeat center;
 	background-size: 60%;
 	border: 2px solid var(--orange);
 	min-height: 200px;
@@ -261,10 +263,10 @@ color: var(--orange);
 
 
 
-/*-- quality assurance --*/
+/*-- quality management --*/
 
 .lpd_pdf{
-	background: rgba(167,175,190,0.1) url(img/bn_qm_img.png) no-repeat center;
+	background: rgba(167,175,190,0.1) url(img/bde_qm_img.png) no-repeat center;
 	background-size: 60%;
 	border: 2px solid var(--orange);
 	min-height: 200px;
