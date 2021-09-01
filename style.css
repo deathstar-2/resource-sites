@@ -103,10 +103,16 @@ hr{
 }
 
 .main_symb h1{
-	border: 0px;
-	color: var(--primary);
 	transform: translate(10px,60px);
 }
+
+.main_symb p{
+	color: rgba(204, 51, 0, 0.70);
+	font-size: 12px;
+	font-weight: 600;
+	transform: translate(10px,60px);
+}
+
 
 .grid2{
 	grid-column:1/3;
