@@ -250,19 +250,6 @@ color: var(--orange);
 
 
 
-/*-- resilience --*/
-
-.resmtg_pdf{
-	background: rgba(167,175,190,0.1) url(img/unavail_img.PNG) no-repeat center;
-	background-size: 60%;
-	border: 2px solid var(--orange);
-	min-height: 200px;
-	border-radius: 5px;
-}
-
-
-
-
 /*-- quality assurance --*/
 
 .lpd_pdf{
